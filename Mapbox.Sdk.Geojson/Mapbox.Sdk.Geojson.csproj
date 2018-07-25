@@ -15,12 +15,12 @@
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackageId>Kwon.Mapbox.Sdk.Geojson</PackageId>
-    <PackageVersion>3.3.0.1</PackageVersion>
+    <PackageVersion>3.3.0.2</PackageVersion>
     <Authors>Brad Kwon</Authors>
     <PackageLicenseUrl>https://github.com/BradKwon/Xamarin.Android.Binding.Mapbox.Sdk.Geojson/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>Brad Kwon</Owners>
     <PackageProjectUrl>https://github.com/BradKwon/Xamarin.Android.Binding.Mapbox.Sdk.Geojson</PackageProjectUrl>
-    <PackageReleaseNotes>Initial release of Mapbox.Sdk.Geojson 3.3.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Added FeatureFromJson class to support Feature class due to being unable to use FromGeometry method.</PackageReleaseNotes>
     <PackageTags>Mapbox SDK Geojson Xamarin Android</PackageTags>
     <Title>Mapbox SDK Geojson binding library for Xamarin.Android</Title>
     <Description>Mapbox SDK Geojson binding library for Xamarin.Android</Description>
@@ -55,10 +55,14 @@
     <Reference Include="GoogleGson">
       <HintPath>..\packages\GoogleGson.2.8.1\lib\MonoAndroid\GoogleGson.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Xamarin.Android.Binding.Mapbox.Sdk.Services\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Additions\EmptyClass.cs" />
+    <Compile Include="Additions\FeatureForJson.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Additions\AboutAdditions.txt" />
