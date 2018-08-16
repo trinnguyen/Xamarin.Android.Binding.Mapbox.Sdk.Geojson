@@ -9,7 +9,7 @@ namespace Com.Mapbox.Geojson.Additions
         public string Type { get { return "Feature"; } }
 
         [JsonProperty("properties")]
-        public Properties Properties { get; set; }
+        public GoogleGson.JsonObject Properties { get; set; }
 
         [JsonProperty("geometry")]
         public DatasetGeometry Geometry { get; set; }
@@ -21,15 +21,6 @@ namespace Com.Mapbox.Geojson.Additions
         {
             return JsonConvert.SerializeObject(this);
         }
-    }
-
-    public class Properties
-    {
-        [JsonProperty("id")]
-        public int Id { get; set; }
-
-        [JsonProperty("mt-name")]
-        public string MtName { get; set; }
     }
 
     public class DatasetGeometry
