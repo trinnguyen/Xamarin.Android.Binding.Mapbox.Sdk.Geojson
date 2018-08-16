@@ -15,12 +15,12 @@
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackageId>Kwon.Mapbox.Sdk.Geojson</PackageId>
-    <PackageVersion>3.3.0.2</PackageVersion>
+    <PackageVersion>3.3.0.3</PackageVersion>
     <Authors>Brad Kwon</Authors>
     <PackageLicenseUrl>https://github.com/BradKwon/Xamarin.Android.Binding.Mapbox.Sdk.Geojson/blob/master/LICENSE</PackageLicenseUrl>
     <Owners>Brad Kwon</Owners>
     <PackageProjectUrl>https://github.com/BradKwon/Xamarin.Android.Binding.Mapbox.Sdk.Geojson</PackageProjectUrl>
-    <PackageReleaseNotes>Added FeatureFromJson class to support Feature class due to being unable to use FromGeometry method.</PackageReleaseNotes>
+    <PackageReleaseNotes>Updates to use GoogleJson.Properties for FeatureForJson.Properties.</PackageReleaseNotes>
     <PackageTags>Mapbox SDK Geojson Xamarin Android</PackageTags>
     <Title>Mapbox SDK Geojson binding library for Xamarin.Android</Title>
     <Description>Mapbox SDK Geojson binding library for Xamarin.Android</Description>
