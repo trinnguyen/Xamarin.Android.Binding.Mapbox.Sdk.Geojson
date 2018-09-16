@@ -14,5 +14,5 @@
     <attr path="/api/package[@name='com.mapbox.geojson.gson']/class[@name='PointSerializer']/method[@name='serialize' and count(parameter)=3 and parameter[1][@type='com.mapbox.geojson.Point'] and parameter[2][@type='java.lang.reflect.Type'] and parameter[3][@type='com.google.gson.JsonSerializationContext']]/parameter[1]" name="managedType">Java.Lang.Object</attr>
     <remove-node path="/api/package[@name='com.mapbox.geojson.gson']/class[@name='GeometryTypeAdapter']/method[@name='write' and count(parameter)=2 and parameter[1][@type='com.google.gson.stream.JsonWriter'] and parameter[2][@type='com.mapbox.geojson.Geometry']]" />
     <remove-node path="/api/package[@name='com.mapbox.geojson.gson']/class[@name='GeometryTypeAdapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.google.gson.stream.JsonReader']]" />
-    <remove-node path="/api/package[@name='com.mapbox.geojson']/interface[@name='CoordinateContainer']" />
+    <remove-node path="/api/package[@name='com.mapbox.geojson']/interface[@name='CoordinateContainer']/method[@name='coordinates' and count(parameter)=0]" />
 </metadata>
